@@ -40,11 +40,11 @@ function sendRequest(name, phone, address, goods, sum) {
 
     for (let i = 0; i < countOfGoods; i += 1) {
         data.goods.push({});
-		data.goods[i].title = goods[i].title;
-		data.goods[i].count = goods[i].count;
+	data.goods[i].title = goods[i].title;
+	data.goods[i].count = goods[i].count;
     }  
 
-	data.client = name + ' ' + phone;
+    data.client = name + ' ' + phone;
     data.order.address = 'ул. ' + address.street + ', дом '+ address.house + ', ' + address.entrance + ' подъезд, ' + address.floor + ' этаж, кв ' + address.flat;
     data.order.sum = sum;
 	
